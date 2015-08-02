@@ -7,7 +7,7 @@ function str_lclip($str, $clipStr, $multiple) {
     $clipLength = strlen($clipStr);
 	
     
-    if (strlen($clippedStr) > 0 && strlen($clipStr) > 0 && strpos($clippedStr, $clipStr) !== false) {
+    if ($clippedStrLength > 0 && $clipLength > 0 && ($clipLength <= $clippedStrLength) && strpos($clippedStr, $clipStr) !== false) {
 		
 	      $maxIterations = ($multiple === true) ? ceil($clippedStrLength / $clipLength) : 1;
 		
