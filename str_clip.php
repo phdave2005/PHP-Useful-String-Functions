@@ -9,7 +9,7 @@ function str_clip($str, $clipStr, $multiple, $side) {
     $reverseClipStr = strrev($clipStr);
 	
     
-    if (strlen($clippedStr) > 0 && strlen($clipStr) > 0 && strpos($clippedStr, $clipStr) !== false) {
+    if ($clippedStrLength > 0 && $clipLength > 0 && ($clipLength <= $clippedStrLength) && strpos($clippedStr, $clipStr) !== false) {
 		
       	$maxIterations = ($multiple === true) ? ceil($clippedStrLength / (2 * $clipLength)) : 1;
 		
