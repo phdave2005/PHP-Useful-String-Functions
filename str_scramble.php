@@ -3,7 +3,7 @@
 function str_scramble($str) {
 	
     if (is_array($str)) {
-        $randomizedStr = "Not a string";
+        throw New Exception("Not a string");
     } else {
         $str = (string)$str;//Force numbers to be strings
         $strLength = strlen($str);
