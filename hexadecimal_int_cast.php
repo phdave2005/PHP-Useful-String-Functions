@@ -2,7 +2,7 @@
 
 function hexadecimal_int_cast($str) {
 	
-	$str 	= strtolower((string)($str));
+	$str 	= strtolower((string)$str);
     $length = strlen($str);
     
     $returnVal = '';
