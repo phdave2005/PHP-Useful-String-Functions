@@ -2,7 +2,7 @@
 
 function binary_int_cast($str) {
 
-	$str 	= (string)(strtolower($str));
+	$str 	= strtolower((string)$str);
     $length = strlen($str);
 
     $returnVal = '';
