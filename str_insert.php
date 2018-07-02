@@ -9,7 +9,7 @@ function str_insert($str, $position, $insert) {
     throw new Exception("The third argument must be a string");
   } else {
   
-    $output = substr($str, 0, $position) . $insert . substr($str, $position, (strlen($str) - $position));
+    $output = substr($str, 0, $position) . $insert . substr($str, $position);
     
     echo $output;
   
